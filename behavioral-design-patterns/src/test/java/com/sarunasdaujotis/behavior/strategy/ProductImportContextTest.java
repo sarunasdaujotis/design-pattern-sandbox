@@ -3,19 +3,13 @@ package com.sarunasdaujotis.behavior.strategy;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ProductImportContextTest {
-
-	@Mock
-	private DeviceImport deviceImport;
-
-	@Mock
-	private AccessoryImport accessoryImport;
 
 	private ProductImportContext productImportContext;
 
@@ -26,6 +20,7 @@ public class ProductImportContextTest {
 
 	@Test
 	public void testDeviceImportStrategy() {
+		final ProductImportStrategy deviceImport = spy(new DeviceImport());
 		productImportContext.setProductImportStrategy(deviceImport);
 
 		productImportContext.execute("device");
@@ -35,6 +30,7 @@ public class ProductImportContextTest {
 
 	@Test
 	public void testAccessoryImportStrategy() {
+		final ProductImportStrategy accessoryImport = spy(new AccessoryImport());
 		productImportContext.setProductImportStrategy(accessoryImport);
 
 		productImportContext.execute("accessory");
