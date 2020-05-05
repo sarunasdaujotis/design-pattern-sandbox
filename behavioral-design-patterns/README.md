@@ -5,3 +5,4 @@
 - State
 - Strategy
 - Template
+- Visitor
