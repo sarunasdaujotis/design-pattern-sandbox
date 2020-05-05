@@ -1,0 +1,5 @@
+rootProject.name = 'design-pattern-sandbox'
+include 'creational-design-patterns'
+include 'structural-design-patterns'
+include 'behavioral-design-patterns'
+
