@@ -1,4 +1,4 @@
-package com.sarunasdaujotis.creational.factory;
+package com.sarunasdaujotis.creational.abstractfactory;
 
 public class Handset extends Product {
 

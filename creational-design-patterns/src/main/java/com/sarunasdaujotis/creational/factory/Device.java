@@ -1,8 +1,8 @@
 package com.sarunasdaujotis.creational.factory;
 
-public class Accessory extends Product {
+public class Device extends Product {
 
-	public Accessory(final String uid) {
+	public Device(final String uid) {
 		super(ProductType.DEVICE, uid);
 	}
 

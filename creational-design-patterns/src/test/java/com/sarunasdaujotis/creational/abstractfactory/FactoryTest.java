@@ -1,4 +1,4 @@
-package com.sarunasdaujotis.creational.factory;
+package com.sarunasdaujotis.creational.abstractfactory;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,6 +1,7 @@
 # Creational design patterns
 
-- Singleton
+- Abstract factory
+- Builder
 - Factory
 - Prototype
-- Builder
+- Singleton
