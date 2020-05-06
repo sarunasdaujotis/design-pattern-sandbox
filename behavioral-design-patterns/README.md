@@ -2,6 +2,7 @@
 
 - Command
 - Mediator
+- Memento
 - State
 - Strategy
 - Template
